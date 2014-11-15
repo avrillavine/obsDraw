@@ -51,6 +51,18 @@
                             <next>
                               <block type="multimedia_displaybmp" id="13">
                                 <field name="BMP">DFLogo.bmp</field>
+                                <next>
+                                  <block type="robot_delay" id="45" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="46">
+                                        <field name="NUM">50</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="oled_cleardisplay" id="55"></block>
+                                    </next>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
