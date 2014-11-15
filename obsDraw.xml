@@ -1,36 +1,36 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="32" inline="false" x="42" y="43">
+  <block type="controls_whileUntil" id="1" inline="false" x="42" y="43">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="56">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="42">
+      <block type="movement_forward" id="3">
         <next>
-          <block type="controls_if" id="95" inline="false">
+          <block type="controls_if" id="4" inline="false">
             <value name="IF0">
-              <block type="sensor_object" id="118">
-                <field name="OBJECT">LEFTFRONT</field>
+              <block type="sensor_object" id="5">
+                <field name="OBJECT">REAR</field>
               </block>
             </value>
             <statement name="DO0">
-              <block type="oled_cleardisplay" id="132">
+              <block type="oled_cleardisplay" id="6">
                 <next>
-                  <block type="oled_setcursor" id="143" inline="true">
+                  <block type="oled_setcursor" id="7" inline="true">
                     <value name="STARTX">
-                      <block type="math_number" id="152">
+                      <block type="math_number" id="8">
                         <field name="NUM">1</field>
                       </block>
                     </value>
                     <value name="STARTY">
-                      <block type="math_number" id="153">
+                      <block type="math_number" id="9">
                         <field name="NUM">1</field>
                       </block>
                     </value>
                     <next>
-                      <block type="multimedia_displaybmp" id="176">
+                      <block type="multimedia_displaybmp" id="10">
                         <field name="BMP">DFLogo.bmp</field>
                       </block>
                     </next>
