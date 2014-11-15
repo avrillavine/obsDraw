@@ -1,1 +1,46 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="32" inline="false" x="42" y="43">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="56">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="42">
+        <next>
+          <block type="controls_if" id="95" inline="false">
+            <value name="IF0">
+              <block type="sensor_object" id="118">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="oled_cleardisplay" id="132">
+                <next>
+                  <block type="oled_setcursor" id="143" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="152">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="153">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="multimedia_displaybmp" id="176">
+                        <field name="BMP">DFLogo.bmp</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
